@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+@keyframes backAnimation {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+@-webkit-keyframes backAnimation {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+@-ms-keyframes backAnimation {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+@-moz-keyframes backAnimation {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+
+div#myanimation{
+	height: 229px;
+	background-image: url(clouds.jpg);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: backAnimation 15s linear infinite;
+	-ms-animation: backAnimation 15s linear infinite;
+	-moz-animation: backAnimation 15s linear infinite;
+	-webkit-animation: backAnimation 15s linear infinite;
+}
